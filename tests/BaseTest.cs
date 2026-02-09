@@ -11,21 +11,19 @@ public abstract class BaseTest
     protected IBrowserContext Context = null!;
     protected IPage Page = null!;
 
-     protected string BaseUrl = null!;
+    protected string BaseUrl = null!;
 
     [TestInitialize]
     public async Task Setup()
     {
         Playwright = await Microsoft.Playwright.Playwright.CreateAsync();
-
-       
-       // the headless part of this can and should be moved to a config file, I just don't know how
+    
         Browser = await Playwright.Chromium.LaunchAsync(new()
         {
             Headless = false
         });
 
-         var config = ConfigLoader.Load();
+        var config = ConfigLoader.Load();
         BaseUrl = config.BaseUrl;
         Context = await Browser.NewContextAsync();
         Page = await Context.NewPageAsync();

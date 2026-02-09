@@ -1,4 +1,3 @@
-//This should've been named the 'Home Page', I don't know what I was thinking
 using Microsoft.Playwright;
 namespace PlaywrightTests.Pages.Overview;
 

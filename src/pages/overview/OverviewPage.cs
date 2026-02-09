@@ -1,4 +1,3 @@
-//See Locator's page for comments
 using Microsoft.Playwright;
 using static Microsoft.Playwright.Assertions;
 using PlaywrightTests.Pages.Overview;
