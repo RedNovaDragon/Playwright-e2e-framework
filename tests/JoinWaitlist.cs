@@ -12,7 +12,9 @@ public sealed class JoinWaitlist : BaseTest
 
 
     [TestMethod]
-    public async Task WaitlistPage()
+
+    //The purpose of this test is to check if one is able to sign up for the Waitlist via automation. The expected behavior is no 
+    public async Task JoinWaitlistTest()
     {
         
         var homePage = new HomePage(Page);
@@ -23,12 +25,15 @@ public sealed class JoinWaitlist : BaseTest
         //check that Waitlist in the header is visible
         await homePage.AssertWaitlistIsVisible();
         var waitlistPage = new WaitlistPage(Page);
+
         //we click on the Waitlist button in the header
         await waitlistPage.ClickWaitlistButtonInHeader();
+
         //input first name, last name and email
         await waitlistPage.InputFirstName("Jane");
         await waitlistPage.InputLastName("Doe");
         await waitlistPage.InputEmail("jane.doe@abv.bg");
+        
         //hit next
         await waitlistPage.NextButton();
 
