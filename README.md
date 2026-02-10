@@ -2,6 +2,14 @@
 
 An example Playwright Framework with MSTest utilising the Page Object Model in order to demonstrate its capability for e2e UI automation.
 
+## Why Playwright?
+
+- Hugely popular Framework with tons of support which makes debugging and problem-solving easier
+- Works with most popular languages
+- Can also be used for API testing
+- Modern means it's easier to navigate and setup
+
+
 ## Tech Stack
 
 - .NET 8 (LTS)
