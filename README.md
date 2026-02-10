@@ -13,7 +13,7 @@ An example Playwright Framework with MSTest utilising the Page Object Model in o
 ## Tech Stack
 
 - .NET 8 (LTS)
-- Playwright for .NET
+- Playwright
 - MSTest
 - C#
 
